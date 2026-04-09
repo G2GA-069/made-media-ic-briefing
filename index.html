@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(350%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(20%2C72%25%2C48%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2244%22%20text-anchor%3D%22middle%22%20font-family%3D%22-apple-system%2CBlinkMacSystemFont%2Csans-serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%3EM%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Made Media Group — IC Briefing Memo">
+<meta property="og:description" content="Made Media Group — IC Briefing Memo | deployed with HTMLaunch">
+<meta property="og:url" content="https://G2GA-069.github.io/made-media-ic-briefing/">
+<meta property="og:image" content="https://api.htmlaunch.com/card/G2GA-069/made-media-ic-briefing">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Made Media Group — IC Briefing Memo">
+<meta name="twitter:description" content="Made Media Group — IC Briefing Memo | deployed with HTMLaunch">
+<meta name="twitter:image" content="https://api.htmlaunch.com/card/G2GA-069/made-media-ic-briefing">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Made Media Group — IC Briefing Memo</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0c0c0e;
+  --surface: #141418;
+  --surface2: #1a1a20;
+  --border: #2a2a32;
+  --text: #e0ddd8;
+  --text-dim: #8a8880;
+  --accent: #c4a35a;
+  --accent-dim: #8a7a44;
+  --red: #c45a5a;
+  --green: #5ac46a;
+  --blue: #5a8ac4;
+  --mono: 'JetBrains Mono', monospace;
+  --serif: 'Source Serif 4', Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--serif); font-size: 15px; line-height: 1.65; padding: 2rem; max-width: 1200px; margin: 0 auto; }
+h1 { font-family: var(--mono); font-size: 1.1rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.25rem; }
+h2 { font-family: var(--mono); font-size: 0.8rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.2em; margin: 2.5rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border); }
+h3 { font-family: var(--mono); font-size: 0.75rem; font-weight: 600; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.15em; margin: 1.5rem 0 0.5rem; }
+.meta { font-family: var(--mono); font-size: 0.7rem; color: var(--text-dim); margin-bottom: 2rem; }
+.meta span { color: var(--red); font-weight: 600; }
+p { margin-bottom: 0.8rem; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1rem 0; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+.card { background: var(--surface); border: 1px solid var(--border); padding: 1rem 1.2rem; border-radius: 4px; }
+.card-title { font-family: var(--mono); font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.4rem; }
+.card-value { font-family: var(--mono); font-size: 1.4rem; font-weight: 700; color: var(--text); }
+.card-value.accent { color: var(--accent); }
+.card-sub { font-family: var(--mono); font-size: 0.65rem; color: var(--text-dim); margin-top: 0.2rem; }
+table { width: 100%; border-collapse: collapse; margin: 0.8rem 0 1.2rem; font-size: 0.82rem; }
+th { font-family: var(--mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-dim); text-align: right; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); }
+th:first-child { text-align: left; }
+td { padding: 0.35rem 0.6rem; border-bottom: 1px solid #1e1e24; text-align: right; font-family: var(--mono); font-size: 0.78rem; }
+td:first-child { text-align: left; font-family: var(--serif); font-size: 0.82rem; color: var(--text); }
+tr.total td { border-top: 2px solid var(--accent-dim); font-weight: 700; color: var(--accent); }
+tr.subtotal td { border-top: 1px solid var(--border); font-weight: 600; }
+.neg { color: var(--red); }
+.pos { color: var(--green); }
+.dim { color: var(--text-dim); }
+.flag { background: var(--red); color: #fff; font-family: var(--mono); font-size: 0.6rem; padding: 0.15rem 0.4rem; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; display: inline-block; margin-left: 0.3rem; vertical-align: middle; }
+.flag.warn { background: var(--accent-dim); }
+.flag.ok { background: #2a5a3a; }
+.note { background: var(--surface2); border-left: 3px solid var(--accent-dim); padding: 0.8rem 1rem; margin: 1rem 0; font-size: 0.85rem; }
+.note strong { color: var(--accent); }
+.note.red { border-left-color: var(--red); }
+.note.red strong { color: var(--red); }
+.section-divider { height: 1px; background: linear-gradient(90deg, var(--accent-dim), transparent); margin: 3rem 0 2rem; }
+.tag { font-family: var(--mono); font-size: 0.6rem; padding: 0.1rem 0.4rem; border: 1px solid var(--border); border-radius: 2px; color: var(--text-dim); display: inline-block; margin-right: 0.3rem; }
+ul { padding-left: 1.2rem; margin: 0.5rem 0 1rem; }
+li { margin-bottom: 0.3rem; }
+.two-col-text { columns: 2; column-gap: 2rem; }
+@media (max-width: 800px) { .grid, .grid-3 { grid-template-columns: 1fr; } .two-col-text { columns: 1; } }
+</style>
+</head>
+<body>
+
+<h1>Made Media Group</h1>
+<p style="font-size:1.1rem; color:var(--text-dim); margin-bottom:0.2rem;">Pre-Meeting IC Briefing — Management Meeting Prep</p>
+<div class="meta">Prepared: 08 Apr 2026 &nbsp;|&nbsp; Classification: <span>CONFIDENTIAL</span> &nbsp;|&nbsp; Status: PRELIMINARY — Sources are unaudited management accounts + half-built associate model</div>
+
+<!-- ============================================================ -->
+<h2>§1 — Executive Summary & Target Definition</h2>
+
+<p><strong>Target:</strong> Made Media Ltd (UK) + Made Media Inc (US) — the core agency business. The sellers (Jake &amp; Jana Grimley, ~79% via options/equity) also own CrowdHandler Ltd (80% MML) and Basker Ltd (75% MML). The SaaS subsidiaries are <em>not</em> the primary target but come attached via the holding structure and intercompany loans. The deal is effectively a carve-out of the operating agency with the SaaS assets as kickers.</p>
+
+<p>Made Media is a UK-headquartered digital agency specialising in CMS/web development. Revenue mix is ~70% project work, ~30% recurring (hosting, support agreements, BlocksOffice subscriptions). The US entity (Inc) is the larger revenue contributor (~£3.6m of £5.0m group), with the UK entity contributing ~£2.8m before eliminations of ~£2.1m intercompany recharge.</p>
+
+<div class="grid-3">
+  <div class="card">
+    <div class="card-title">Group Revenue (FY25, post-elim)</div>
+    <div class="card-value">£5.0m</div>
+    <div class="card-sub">FY24: £4.6m · FY23: £4.8m</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Adj. EBITDA (FY25)</div>
+    <div class="card-value accent">£637k</div>
+    <div class="card-sub">FY24: £275k · FY23: £1,018k</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Cash at Latest (Mar 26)</div>
+    <div class="card-value">£1.44m</div>
+    <div class="card-sub">Group consolidated, pre-interco</div>
+  </div>
+</div>
+
+<div class="note">
+  <strong>Critical framing:</strong> The model uses a £500k "normalised" EBITDA for valuation purposes. This is a blend/average of the volatile 3-year history (£1.0m → £275k → £637k). The FY24 trough was real — likely project timing + FX. The £500k entry EBITDA assumption is conservative-to-fair. Sellers will argue £637k+ trending to £713k (model FY26 base case).
+</div>
+
+<!-- ============================================================ -->
+<h2>§2 — Group Structure & Shareholder Dynamics</h2>
+
+<table>
+  <tr><th>Entity</th><th>Owner</th><th>Revenue</th><th>Recurring %</th><th>HC</th><th>Status</th></tr>
+  <tr><td>Made Media Holdings Ltd (UK)</td><td>J&J Grimley + ~21% options pool</td><td>—</td><td>—</td><td>—</td><td class="dim">HoldCo</td></tr>
+  <tr><td>Made Media Ltd (UK)</td><td>MMH 100%</td><td>£2.8m</td><td>48%</td><td>28</td><td class="pos">Core target</td></tr>
+  <tr><td>Made Media Inc (US)</td><td>MML 100%</td><td>£3.8m ($5.1m)</td><td>43%</td><td>6</td><td class="pos">Core target</td></tr>
+  <tr><td style="padding-left:1.5rem;">Interco elimination</td><td></td><td class="neg">(£2.2m)</td><td></td><td></td><td class="dim">Recharge</td></tr>
+  <tr><td>CrowdHandler Ltd (UK)</td><td>MML 80% / Exec 20%</td><td>£500k</td><td>100%</td><td>4</td><td><span class="flag warn">SaaS kicker</span></td></tr>
+  <tr><td>Basker Ltd (UK)</td><td>MML 75% / Exec 25%</td><td>£200k</td><td>100%</td><td>3</td><td><span class="flag warn">Pre-revenue</span></td></tr>
+  <tr class="total"><td>Consolidated (post-elim)</td><td></td><td>£5.1m</td><td></td><td>46</td><td></td></tr>
+</table>
+
+<h3>What the Grimleys Want</h3>
+<p>Jake &amp; Jana currently extract ~£146k/yr combined (£25k PAYE via CH, £61k dividends via MML, £60k pension via MML). This is a lifestyle-funded founder couple. Their comp is modest relative to the business scale — which means: (a) they are not overcharging the P&L (the £55k adjustment in the model is pension normalisation + maybe some personal costs), and (b) they will be sensitive to <em>total proceeds</em>, not headline multiple. They are likely to value certainty of close, vendor loan terms, and personal exit from operational burden.</p>
+
+<p>The ~21% minority option pool is a negotiation complexity. These are likely key staff (Head of Dev, Head of Projects, etc.). Their consent or buyout is needed. If underwater or modest, a small cash settlement could clear them. If in-the-money, they add to the EV-to-equity bridge as a Day-1 cash item.</p>
+
+<div class="note red">
+  <strong>Key question for tomorrow:</strong> What is the exact option strike, vesting, and who holds them? Are they in MMH or MML? This determines if they are a pre-close clean-up or a completion mechanic.
+</div>
+
+<!-- ============================================================ -->
+<h2>§3 — Financial Deep Dive</h2>
+
+<h3>Revenue Composition (FY25 — Pre-Elimination, from Entity P&Ls)</h3>
+<table>
+  <tr><th>Line</th><th>MML (£)</th><th>MMI ($→£@1.35)</th><th>CH (£)</th><th>Basker (£)</th></tr>
+  <tr><td>Project Revenue</td><td>1,419k</td><td>2,443k</td><td>—</td><td>—</td></tr>
+  <tr><td>BlocksOffice Subs</td><td>416k</td><td>380k</td><td>—</td><td>—</td></tr>
+  <tr><td>Hosting</td><td>310k</td><td>305k</td><td>—</td><td>—</td></tr>
+  <tr><td>Support Agreements</td><td>480k</td><td>402k</td><td>—</td><td>—</td></tr>
+  <tr><td>CrowdHandler recharge</td><td>74k</td><td>50k</td><td>519k</td><td>—</td></tr>
+  <tr><td>Adhoc Support</td><td>91k</td><td>54k</td><td>—</td><td>—</td></tr>
+  <tr><td>Basker tiers</td><td>—</td><td>—</td><td>—</td><td>101k</td></tr>
+  <tr><td>Resale / Other</td><td>48k</td><td>1k</td><td>—</td><td>—</td></tr>
+  <tr class="total"><td>Total</td><td>2,839k</td><td>3,635k</td><td>519k</td><td>101k</td></tr>
+</table>
+
+<h3>Recurring Revenue Analysis</h3>
+<p>The PDF claims 48% recurring for MML and 43% for MMI. From the P&L breakdown: BlocksOffice + Hosting + Support + CrowdHandler recharges = roughly £1.3m for MML (~46%) and $1.5m for MMI (~34%). The "recurring" label is generous — support agreements often have annual renewal risk. True SaaS-grade ARR is really only CrowdHandler (£519k, 100% recurring) and Basker (£101k, subscription-based but early).</p>
+
+<h3>Profitability Waterfall (FY25 Group Consolidated)</h3>
+<table>
+  <tr><th></th><th>£</th><th>% Rev</th></tr>
+  <tr><td>Revenue (post-elim)</td><td>4,983k</td><td>100%</td></tr>
+  <tr><td>Cost of Sales</td><td>(2,482k)</td><td>49.8%</td></tr>
+  <tr><td>Gross Profit</td><td>2,501k</td><td>50.2%</td></tr>
+  <tr><td>Overheads</td><td>(1,919k)</td><td>38.5%</td></tr>
+  <tr><td>EBITDA</td><td>582k</td><td>11.7%</td></tr>
+  <tr><td>Adjustments (pension norm.)</td><td>55k</td><td></td></tr>
+  <tr class="total"><td>Adj. EBITDA</td><td>637k</td><td>12.8%</td></tr>
+</table>
+
+<div class="note">
+  <strong>Margin discussion:</strong> 12.8% EBITDA margin is thin for a digital agency. Best-in-class UK agencies run 18-25%. This is either: (a) the SaaS losses dragging (CrowdHandler and Basker combined lost ~£59k at EBITDA in FY25 before overheads; Basker lost £116k op. profit), (b) subcontractor-heavy cost base (MMI COS is 68% of rev), or (c) under-pricing. Stripping out the SaaS burn, the pure agency EBITDA would be higher — worth quantifying in DD.
+</div>
+
+<h3>Balance Sheet — Key Items (Mar 2026 Group)</h3>
+<table>
+  <tr><th>Item</th><th>£</th><th>Commentary</th></tr>
+  <tr><td>Cash (all entities)</td><td>1,439k</td><td>MML: £1,194k + MMI: $821k (£608k@1.35) — but group shows £1,439k at 16 Mar. This is the real number.</td></tr>
+  <tr><td>Accounts Receivable</td><td>698k</td><td>Down from £1.2m — possible collection improvement or lower billings</td></tr>
+  <tr><td>Deferred Income</td><td>834k</td><td>Significant — this is pre-paid client revenue. Good quality liability.</td></tr>
+  <tr><td>HSBC Bank Loan</td><td>17k</td><td>Nearly fully repaid. Immaterial.</td></tr>
+  <tr><td>Net Current Assets</td><td>1,711k</td><td>Strong WC position</td></tr>
+  <tr><td>Interco: CH owes MML</td><td>168k</td><td class="neg">PDF says ~£140k; BS shows £168k. Gap to investigate.</td></tr>
+  <tr><td>Interco: Basker owes MML</td><td>320k</td><td class="neg">PDF says ~£320k. Confirmed in BS.</td></tr>
+  <tr class="total"><td>Total Interco Receivable</td><td>488k</td><td>Economically equivalent to extracted capital (see bridge)</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<h2>§4 — Valuation & EV-to-Equity Bridge</h2>
+
+<h3>Entry Valuation</h3>
+<div class="grid">
+  <div class="card">
+    <div class="card-title">Normalised EBITDA (Model Assumption)</div>
+    <div class="card-value accent">£500k</div>
+    <div class="card-sub">Conservative vs. FY25 £637k. 3yr avg = £643k but skewed by FY23.</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Entry Multiple</div>
+    <div class="card-value">5.0x</div>
+    <div class="card-sub">Range: 4-7x tested in model. 5x = £2.5m EV.</div>
+  </div>
+</div>
+
+<p>5x EBITDA for a UK digital agency with ~45% recurring, founder-dependent, 46 heads, is <em>fair to slightly generous</em>. Comparable transactions for sub-£10m agencies typically trade 3.5-5.5x depending on recurring mix and client concentration. The SaaS kickers (CrowdHandler at £500k ARR, 100% recurring, growing 19% YoY) arguably deserve a separate valuation lens but are currently loss-making at entity level after overhead absorption.</p>
+
+<h3>EV-to-Equity Bridge (Proposed Framework)</h3>
+
+<table>
+  <tr><th>Item</th><th>£</th><th>Category</th><th>Notes</th></tr>
+  <tr><td>Enterprise Value</td><td>2,500,000</td><td></td><td>5.0x £500k</td></tr>
+  <tr style="background:var(--surface2)"><td colspan="4" style="text-align:left; color:var(--accent); font-family:var(--mono); font-size:0.7rem; padding:0.5rem 0.6rem;">DAY-1 CASH ITEMS (settle at completion)</td></tr>
+  <tr><td>Less: Interco receivable from CH</td><td class="neg">(168,000)</td><td>Day-1</td><td>Cash not in target; equivalent to extraction</td></tr>
+  <tr><td>Less: Interco receivable from Basker</td><td class="neg">(320,000)</td><td>Day-1</td><td>Cash not in target; Basker cannot repay</td></tr>
+  <tr><td>Less: Option pool buyout (est.)</td><td class="neg">(50,000)</td><td>Day-1</td><td>Placeholder — needs option schedule</td></tr>
+  <tr><td>Less: Transaction costs</td><td class="neg">(250,000)</td><td>Day-1</td><td>Legal, DD, advisors. Model uses £250k.</td></tr>
+  <tr style="background:var(--surface2)"><td colspan="4" style="text-align:left; color:var(--accent); font-family:var(--mono); font-size:0.7rem; padding:0.5rem 0.6rem;">FUTURE ITEMS AT PV (negotiated EV reductions)</td></tr>
+  <tr><td>Less: Lease/rent normalisation</td><td class="dim">TBD</td><td>Future PV</td><td>Need current lease terms vs. market rent. Cap at 7-9%.</td></tr>
+  <tr><td>Less: Key-man discount</td><td class="dim">TBD</td><td>Future PV</td><td>Grimleys are operational. Transition risk.</td></tr>
+  <tr class="subtotal"><td>Implied Net EV to Sellers</td><td>1,712,000</td><td></td><td>Before cash add-back</td></tr>
+  <tr><td>Plus: Normalised cash in business</td><td class="pos">480,000</td><td></td><td>Model min cash = £480k (≈1.5mo opex)</td></tr>
+  <tr class="total"><td>Net Cash to Sellers (pre-deferred)</td><td>2,192,000</td><td></td><td></td></tr>
+</table>
+
+<div class="note red">
+  <strong>Model errors found in the associate's work:</strong><br>
+  1. S&U does not balance cleanly — the model has Earn-out 1x, Bank 2x, VL 1.1x, Equity 0.9x = 5.0x. But earn-out is NOT a source at Day 1. It is deferred consideration.<br>
+  2. The EV-equity bridge is flagged as "very tricky" (cell E166) and is not built.<br>
+  3. The interco receivables (£488k combined) are deducted nowhere in the model. They should be explicit bridge items.<br>
+  4. The cash sweep / debt repayment logic has negative balances (cells H107-M111 show negative opening balances for bank debt — structurally broken).<br>
+  5. Vendor loan PIK at 6% (cell C117) but cash interest at 0% (cells H120-M120). This is a seller-friendly structure; need to negotiate cash pay.<br>
+  6. The model double-counts: EBITDA adjustment of £55-60k appears in both the P&L and the "Adjustment" line, but isn't consistently applied.
+</div>
+
+<!-- ============================================================ -->
+<h2>§5 — Deal Structuring Options</h2>
+
+<h3>Sources & Uses (Cleaned-Up Proposal)</h3>
+<table>
+  <tr><th>Sources</th><th>x EBITDA</th><th>£</th><th></th><th>Uses</th><th>£</th></tr>
+  <tr><td>Senior Debt (bank)</td><td>1.5x</td><td>750,000</td><td></td><td>Cash to sellers at close</td><td>~1,200,000</td></tr>
+  <tr><td>Vendor Loan</td><td>1.0x</td><td>500,000</td><td></td><td>Interco write-off (EV adj.)</td><td>488,000</td></tr>
+  <tr><td>Equity</td><td>Residual</td><td>~700,000</td><td></td><td>Transaction costs</td><td>250,000</td></tr>
+  <tr><td>Deferred (earn-out)</td><td>1.0x</td><td>500,000</td><td></td><td>Cash injection (min WC)</td><td>480,000</td></tr>
+  <tr><td></td><td></td><td></td><td></td><td>Option pool buyout</td><td>50,000</td></tr>
+  <tr class="total"><td>Total Sources</td><td></td><td>2,450,000</td><td></td><td>Total Uses</td><td>2,468,000</td></tr>
+</table>
+<p class="dim" style="font-size:0.75rem;">Note: Illustrative. Equity cheque is the plug. Actual balancing requires confirmed bridge items.</p>
+
+<h3>Structuring Levers</h3>
+
+<p><strong>Vendor Loan (£500k, 5yr):</strong> The Grimleys need this to feel like real money. Propose 6% cash-pay (not PIK — we want alignment). 18-month interest-only, then amortising. Subordinated to bank. This keeps them engaged post-close and creates a natural transition incentive. The model's PIK-only structure at 6% is a gift to the buyer but sellers will push back.</p>
+
+<p><strong>Earn-out (£500k, 3 tranches):</strong> The model structures this as 3 annual payments tied to EBITDA milestones (£620k, £650k, £750k). This is reasonable. The milestones are achievable under the base case (FY26: £713k, FY27: £719k, FY28: £820k). A 10% surplus sharing mechanism is modelled — excess EBITDA above milestone generates a special dividend. This is seller-friendly but creates strong alignment.</p>
+
+<p><strong>Bank Debt (£750k, 1.5x):</strong> Leverageable. UK SME lenders (OakNorth, Shawbrook, HSBC Growth) will finance 1.0-2.0x for a profitable agency with recurring revenue. Interest at ~10% all-in (base + margin). 5-year term with 10% mandatory amortisation + cash sweep. Entry leverage coverage: EBITDA/interest = 500k/75k = 6.7x. Comfortable.</p>
+
+<h3>Leverageability Assessment</h3>
+<div class="grid-3">
+  <div class="card">
+    <div class="card-title">Entry Leverage</div>
+    <div class="card-value">1.5x</div>
+    <div class="card-sub">Bank only. 2.5x incl. VL.</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Interest Coverage</div>
+    <div class="card-value accent">6.7x</div>
+    <div class="card-sub">EBITDA / cash interest</div>
+  </div>
+  <div class="card">
+    <div class="card-title">DSCR (yr 1)</div>
+    <div class="card-value">~2.8x</div>
+    <div class="card-sub">LFCF / total debt service</div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<h2>§6 — Commercial Due Diligence (CDD)</h2>
+
+<h3>Market Positioning</h3>
+<p>Made Media operates in the <strong>mid-market web/CMS agency space</strong> — primarily serving cultural, heritage, and public-sector organisations (museums, galleries, visitor attractions). This is a defensible niche. Key product is "BlocksOffice", a proprietary CMS platform that generates recurring subscription + hosting revenue. The US operation appears to serve a similar client base (likely US museums/cultural orgs given the cross-sell of CrowdHandler, a virtual queue/traffic management SaaS for event ticketing).</p>
+
+<h3>Customer Analysis</h3>
+<table>
+  <tr><th>Segment</th><th>Customers</th><th>Avg Annual £</th><th>Geography</th><th>Concentration Risk</th></tr>
+  <tr><td>MML/MMI (Agency)</td><td>48</td><td>£93,000</td><td>US:37, UK:5, CA:3, AU:3</td><td class="neg">Top-heavy. US-dominant.</td></tr>
+  <tr><td>CrowdHandler</td><td>180</td><td>£2,800</td><td>US:47, UK:36, CA:17, Other:80</td><td class="pos">Well-diversified, low ARPU</td></tr>
+  <tr><td>Basker</td><td>8</td><td>£25,000</td><td>UK:5, Other:3</td><td class="neg">Tiny base, early stage</td></tr>
+</table>
+
+<p>The agency has 48 clients at £93k average — this implies meaningful concentration. Losing 2-3 large clients would be material. The top 10 clients likely represent 50%+ of revenue. <strong>This is the #1 CDD risk.</strong></p>
+
+<h3>Competitive Landscape</h3>
+<p>The cultural/heritage CMS niche has limited pure-play competitors. Broader competition comes from: (a) Sitecore/Drupal/WordPress agencies (commoditised), (b) specialist heritage-tech firms like Cogapp, Keepthinking (Qi), and Thirty8 Digital, (c) in-house digital teams at larger institutions. Made Media's moat is BlocksOffice (proprietary CMS) + long-standing relationships + combined US/UK presence. Switching costs are moderate-to-high once BlocksOffice is embedded.</p>
+
+<h3>Who Could Buy This?</h3>
+<table>
+  <tr><th>Buyer Type</th><th>Examples</th><th>Rationale</th><th>Likely Multiple</th></tr>
+  <tr><td>PE/Search Fund</td><td>Us, ECI, Maven</td><td>Platform for roll-up of niche agencies</td><td>4-5x</td></tr>
+  <tr><td>Strategic (larger agency)</td><td>Dept, Sideshow Group, Cogapp</td><td>Client list + US office + BlocksOffice IP</td><td>5-7x</td></tr>
+  <tr><td>SaaS acquirer (for CH/Basker)</td><td>Accesso, Gateway Ticketing</td><td>CrowdHandler fits into event-tech stack</td><td>3-5x rev for SaaS only</td></tr>
+  <tr><td>Management (MBO)</td><td>Existing team</td><td>7 senior managers, option pool exists</td><td>3-4x (funding-constrained)</td></tr>
+</table>
+
+<p>Competitive tension is <strong>moderate</strong>. The business is not actively marketed (approach via the Grimleys directly or their accountant). The cultural-sector niche limits the buyer universe. Our advantage: we are flexible on structure and can accommodate the Grimleys' preference for vendor loan + earn-out + clean exit.</p>
+
+<!-- ============================================================ -->
+<h2>§7 — Technology Due Diligence (TDD)</h2>
+
+<h3>Inferred Tech Stack</h3>
+<p>From the product names and revenue lines, the stack is likely:</p>
+<table>
+  <tr><th>Product</th><th>Likely Stack</th><th>Evidence</th></tr>
+  <tr><td>BlocksOffice (CMS)</td><td>Ruby on Rails or Node.js, PostgreSQL, hosted on AWS/GCP</td><td>Custom CMS for museums. Hosting line suggests managed infrastructure. Subscription model.</td></tr>
+  <tr><td>CrowdHandler (Queue SaaS)</td><td>Node.js/Python, Redis for queuing, Stripe billing, CDN-heavy</td><td>Stripe transaction fees in COS (£19k). Low hosting cost relative to scale (£90k). Event-driven architecture.</td></tr>
+  <tr><td>Basker (Unknown SaaS)</td><td>Early-stage. Likely modern JS stack.</td><td>Tiered pricing (Starter/Standard/Plus/Enterprise + Dev). £22k hosting. 3 developers.</td></tr>
+  <tr><td>Agency projects</td><td>Multi-CMS: WordPress, Drupal, custom. Heavy subcontracting.</td><td>MMI COS includes £1.5m "Projects Other Direct Costs" = subcontractors. Craycode (Poland) = nearshore dev team at £265k.</td></tr>
+</table>
+
+<h3>AI Disruption Risk Assessment</h3>
+<div class="grid">
+  <div class="card" style="border-color:var(--red);">
+    <div class="card-title" style="color:var(--red);">HIGH RISK — Agency Project Revenue</div>
+    <p style="font-size:0.8rem; margin-top:0.5rem;">~£3.8m of revenue (project work + adhoc support) is exposed to AI code generation. Cursor/Claude/Copilot are compressing development timelines. Mid-market CMS builds that took 3 months will take 3 weeks within 2-3 years. The subcontractor-heavy model (£1.5m+ in direct costs at MMI alone) is the first thing AI replaces. <strong>Mitigant:</strong> Design, UX strategy, and client relationship management are harder to automate. The shift from "build" to "configure + advise" is manageable if management pivots.</p>
+  </div>
+  <div class="card" style="border-color:var(--green);">
+    <div class="card-title" style="color:var(--green);">LOW RISK — SaaS Products</div>
+    <p style="font-size:0.8rem; margin-top:0.5rem;">CrowdHandler (virtual queue) and Basker (unclear, likely analytics/CRM for venues) are operational SaaS tools. AI doesn't replace "queue my visitors" or "manage my venue" — it might enhance them. CrowdHandler's 180 customers and 100% recurring revenue are structurally protected. Risk is more competitive than AI-driven.</p>
+  </div>
+</div>
+
+<h3>Rebuild Cost Estimate (Claude + Senior Dev)</h3>
+<table>
+  <tr><th>Component</th><th>Complexity</th><th>Estimated Rebuild (weeks)</th><th>Cost @ £2k/day</th></tr>
+  <tr><td>BlocksOffice CMS (core)</td><td>High — multi-tenant CMS with years of domain logic</td><td>16-24 weeks</td><td>£160-240k</td></tr>
+  <tr><td>CrowdHandler</td><td>Medium — queue management, Stripe integration, analytics dashboard</td><td>8-12 weeks</td><td>£80-120k</td></tr>
+  <tr><td>Basker</td><td>Medium-Low — early product, tiered SaaS</td><td>4-6 weeks</td><td>£40-60k</td></tr>
+  <tr><td>Client project templates / frameworks</td><td>Low — commodity CMS work</td><td>2-4 weeks</td><td>£20-40k</td></tr>
+  <tr class="total"><td>Total estimated rebuild</td><td></td><td>30-46 weeks</td><td>£300-460k</td></tr>
+</table>
+
+<p>The rebuild cost is material but not enormous. The <em>real</em> value isn't the code — it's the 48 agency clients, 180 CrowdHandler customers, and the domain expertise embedded in the team. Technology is a <strong>weak moat</strong>; relationships and switching costs are the <strong>real moat</strong>.</p>
+
+<!-- ============================================================ -->
+<h2>§8 — Intercompany & Bridge Mechanics</h2>
+
+<h3>Intercompany Loans — The Core Issue</h3>
+<p>CrowdHandler owes MML £168k. Basker owes MML £320k. Total: £488k. These are loans from the target (MML) to sister entities that the Grimleys control. Per the PDF, both entities are "now breaking even on revenue" and "CrowdHandler making repayments."</p>
+
+<div class="note">
+  <strong>Per the system prompt framework:</strong> An interco receivable from a related-party entity is economically equivalent to a dividend the sellers paid themselves. The bridge deduction is simply reflecting that the cash balance is lower than it should be. If the receivable had been repaid and then paid out as a dividend, the result is identical. Show the interco explicitly for negotiation transparency, but do not treat it as a separate economic wrong from the cash extraction.
+</div>
+
+<p>Preferred resolution: <strong>Cash repayment pre-close.</strong> CrowdHandler has £104k cash (Mar 26) — it can repay most of its £168k. Basker has £10k cash and negative net assets (£-38k) — it <em>cannot</em> repay its £320k. This means the Basker loan is effectively written off at completion. Under CTA 2009 s.354-358, no tax relief on the write-off between connected companies. Assume zero benefit; any crystallised DTA is post-close upside.</p>
+
+<h3>Is There a Double-Count with Lease Normalisation?</h3>
+<p>Currently unknown — we need the lease terms. If MML is renting office space from a Grimley-related entity below market, the interco deduction (balance sheet hole / stock) and the lease normalisation (P&L suppression / flow / capitalised perpetuity) are measuring different things. Both are defensible. Sellers will argue double-count; the response is prepared per the framework above.</p>
+
+<!-- ============================================================ -->
+<h2>§9 — Key Questions for Management Meeting</h2>
+
+<div class="grid">
+  <div class="card">
+    <div class="card-title">Structure & Shareholders</div>
+    <ul style="font-size:0.8rem;">
+      <li>Exact option pool terms — strike, vesting, holders?</li>
+      <li>CrowdHandler/Basker minority shareholders — who are the exec teams? What are their expectations?</li>
+      <li>Is the intent to sell all entities or just the agency?</li>
+      <li>What does Jake want post-close? 12mo transition? Clean break?</li>
+      <li>Is there a property / lease arrangement with a Grimley-related entity?</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="card-title">Commercial</div>
+    <ul style="font-size:0.8rem;">
+      <li>Top 10 client concentration — % of revenue?</li>
+      <li>Client churn rate (agency + CrowdHandler separately)?</li>
+      <li>Pipeline / backlog for FY26 project revenue?</li>
+      <li>Why did FY24 EBITDA collapse to £275k? Was it a one-off or structural?</li>
+      <li>What is Basker exactly? What does the product do?</li>
+      <li>Craycode (Poland, £265k) — is this a captive dev shop or a true third party?</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="card-title">Technology</div>
+    <ul style="font-size:0.8rem;">
+      <li>BlocksOffice — what language/framework? How many active instances?</li>
+      <li>CrowdHandler — architecture, infrastructure provider, SLA guarantees?</li>
+      <li>IP ownership — are all codebases in MML/MMI? Any personal repos?</li>
+      <li>Tech debt assessment — when was last major refactor?</li>
+      <li>AI integration plans — are they using AI tools internally yet?</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="card-title">Financial / Legal</div>
+    <ul style="font-size:0.8rem;">
+      <li>Confirm FX policy — MMI revenues in USD, costs in USD?</li>
+      <li>HSBC facility — terms, covenants, portability?</li>
+      <li>Any outstanding litigation, IP disputes, GDPR incidents?</li>
+      <li>Pension scheme — DB or DC? Any deficit?</li>
+      <li>Tax position — any HMRC enquiries? R&D tax credits claimed?</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<h2>§10 — Model Issues Register</h2>
+
+<table>
+  <tr><th>#</th><th>Issue</th><th>Severity</th><th>Impact</th></tr>
+  <tr><td>1</td><td>S&U includes earn-out as a Day-1 source — it is deferred consideration</td><td><span class="flag">Critical</span></td><td>Overstates Day-1 funding; understates equity cheque</td></tr>
+  <tr><td>2</td><td>EV-equity bridge not built (cell E166 says "Very tricky")</td><td><span class="flag">Critical</span></td><td>Cannot determine true cash to sellers</td></tr>
+  <tr><td>3</td><td>Interco £488k not deducted anywhere in bridge</td><td><span class="flag">Critical</span></td><td>Overpays sellers by £488k</td></tr>
+  <tr><td>4</td><td>Bank debt schedule shows negative opening balances (over-repayment)</td><td><span class="flag warn">High</span></td><td>Debt amortisation logic is structurally broken</td></tr>
+  <tr><td>5</td><td>Eliminations % held constant at FY25 ratio (29.8%) for all projection years — should flex with entity revenue mix</td><td><span class="flag warn">High</span></td><td>Revenue may be overstated in out-years</td></tr>
+  <tr><td>6</td><td>All entities at flat 5% growth (base case) — no differentiation by product line maturity</td><td><span class="flag warn">High</span></td><td>Understates SaaS growth, overstates agency growth</td></tr>
+  <tr><td>7</td><td>Vendor loan at 6% PIK with 0% cash interest — unusual, seller-friendly</td><td><span class="flag warn">High</span></td><td>Cash interest should be negotiated</td></tr>
+  <tr><td>8</td><td>Min cash assumption of £480k not derived — just hardcoded</td><td><span class="flag warn">High</span></td><td>Should be 1.5mo opex validated in DD</td></tr>
+  <tr><td>9</td><td>FX assumed at 1.35 GBP/USD — sensitivities not run</td><td>Medium</td><td>MMI is ~65% of pre-elim revenue</td></tr>
+  <tr><td>10</td><td>No capex build-up — flat £19k/yr assumed from FY23-25 average</td><td>Medium</td><td>May understate if tech investment needed</td></tr>
+  <tr><td>11</td><td>Depreciation flat at £15.7k — should link to capex schedule</td><td>Low</td><td>Minor P&L impact</td></tr>
+  <tr><td>12</td><td>Returns calculation uses MOIC/IRR but the underlying cashflows are from the broken debt schedule</td><td><span class="flag">Critical</span></td><td>All return numbers in Output Summary are unreliable</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<div class="section-divider"></div>
+
+<h2>§11 — Preliminary Investment Thesis</h2>
+
+<p><strong>Bull case:</strong> Acquire a profitable, cash-generative UK digital agency at 5x EBITDA with two embedded SaaS options (CrowdHandler growing 19% YoY, Basker at inflection point). BlocksOffice creates real switching costs. The cultural/heritage niche is defensible and under-penetrated in the US. Post-acquisition, reduce subcontractor dependency via AI tooling, push recurring revenue mix from ~45% to 60%+, and potentially spin out CrowdHandler as a separate SaaS exit at 5-8x ARR in 3-5 years. Total equity cheque: ~£700k for a business generating £500k+ EBITDA.</p>
+
+<p><strong>Bear case:</strong> Founder dependency is extreme (Jake is CEO + key client relationships). AI disruption compresses project margins within 2-3 years. The US entity is operationally a recharge vehicle with only 6 heads — all intellectual capital may reside in Jake's network. FY24's EBITDA collapse to £275k shows earnings volatility. The interco structure is messy. CrowdHandler and Basker are cash-consuming distractions from the core agency.</p>
+
+<p><strong>Base case conviction:</strong> The deal works if we can get in at 4.5-5.0x on a defensible normalised EBITDA of £500-550k, structure £500k as a vendor loan to keep the Grimleys aligned through transition, and use the earn-out to bridge any valuation gap. The SaaS assets are free upside at this price. Key DD workstream is client concentration and founder dependency.</p>
+
+<div style="margin-top:3rem; padding-top:1rem; border-top:1px solid var(--border); font-family:var(--mono); font-size:0.65rem; color:var(--text-dim);">
+  DISCLAIMER: This memo is based on unaudited management accounts and a partially complete model. All figures are preliminary and subject to DD verification. Not investment advice. Prepared for internal discussion purposes only.
+</div>
+
+</body>
+</html>
